@@ -114,6 +114,58 @@
             </div>
         </section>
 
+        <!-- Video Gallery (New) -->
+        <section class="video-gallery" style="padding: 40px 0; background: #fff;">
+            <div class="container">
+                <h3 style="margin-bottom: var(--spacing-lg);">Recent Videos</h3>
+                <div class="grid-3"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <!-- Video 1 -->
+                    <div class="video-card">
+                        <div class="video-placeholder"
+                            style="background: #000; height: 180px; display: flex; align-items: center; justify-content: center; position: relative; border-radius: 8px 8px 0 0;">
+                            <i class="fas fa-play-circle fa-4x" style="color: rgba(255,255,255,0.8);"></i>
+                            <span
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 2px 5px; font-size: 0.8rem; border-radius: 4px;">12:05</span>
+                        </div>
+                        <div class="video-info"
+                            style="padding: 15px; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Rashed Prodhan on Live TV</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Nov 15, 2025</p>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="video-card">
+                        <div class="video-placeholder"
+                            style="background: #000; height: 180px; display: flex; align-items: center; justify-content: center; position: relative; border-radius: 8px 8px 0 0;">
+                            <i class="fas fa-play-circle fa-4x" style="color: rgba(255,255,255,0.8);"></i>
+                            <span
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 2px 5px; font-size: 0.8rem; border-radius: 4px;">45:30</span>
+                        </div>
+                        <div class="video-info"
+                            style="padding: 15px; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Full Rally Speech - Rangpur</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Nov 01, 2025</p>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="video-card">
+                        <div class="video-placeholder"
+                            style="background: #000; height: 180px; display: flex; align-items: center; justify-content: center; position: relative; border-radius: 8px 8px 0 0;">
+                            <i class="fas fa-play-circle fa-4x" style="color: rgba(255,255,255,0.8);"></i>
+                            <span
+                                style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 2px 5px; font-size: 0.8rem; border-radius: 4px;">03:22</span>
+                        </div>
+                        <div class="video-info"
+                            style="padding: 15px; border: 1px solid #ddd; border-top: none; border-radius: 0 0 8px 8px;">
+                            <h4 style="font-size: 1.1rem; margin-bottom: 5px;">Message to the Youth</h4>
+                            <p style="font-size: 0.9rem; color: #666;">Oct 20, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Digital Assets -->
         <section class="assets-section">
             <div class="container">
@@ -136,25 +188,43 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="grid-container">
+            <div class="grid-4"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
                 <div class="footer-col">
-                    <h4>Jatiya Ganotantrik Party</h4>
-                    <p>Founded by Shafiul Alam Prodhan in 1980.</p>
+                    <h4 style="color: var(--jagpa-red); border-bottom: none;">JAGPA</h4>
+                    <p>Defending the sovereignty of Bangladesh since 1980. Join us in our fight for democracy and
+                        values.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="manifesto.html">Manifesto</a></li>
-                        <li><a href="media.html">Media</a></li>
+                    <ul class="footer-links" style="list-style: none;">
+                        <li><a href="manifesto.html">Manifesto (31 Points)</a></li>
+                        <li><a href="about.html">History & Ideology</a></li>
+                        <li><a href="media.html">Media Gallery</a></li>
+                        <li><a href="../index.html#contact">Join the Party</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p>Dhaka, Bangladesh</p>
-                    <p>info@jagpa.org</p>
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--jagpa-green); margin-right: 5px;"></i>
+                        Central Office, Dhaka</p>
+                    <p><i class="fas fa-envelope" style="color: var(--jagpa-green); margin-right: 5px;"></i>
+                        info@jagpa.org</p>
+                    <p><i class="fas fa-phone" style="color: var(--jagpa-green); margin-right: 5px;"></i> +880 1711
+                        555666</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <a href="https://www.facebook.com/jagpa.org" target="_blank" rel="noopener noreferrer"
+                            style="color: white;"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" style="color: white;"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-bottom"
+                style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #333;">
                 <p>&copy; 2025 Jatiya Ganotantrik Party. All rights reserved.</p>
             </div>
         </div>
