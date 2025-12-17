@@ -1,0 +1,41 @@
+:root {
+    /* Brand Colors */
+    --jagpa-black: #121212;  /* Soft Black for OLED optimization */
+    --jagpa-dark-grey: #1E1E1E; /* slightly lighter for cards/sections */
+    --jagpa-red: #D32F2F;
+    --jagpa-green: #388E3C;
+    
+    /* Text Colors */
+    --text-primary: #FAFAFA; /* Off-white for max readability */
+    --text-secondary: #B0BEC5;
+    --text-accent: #FF5252;
+
+    /* Typography */
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Hind Siliguri', sans-serif; /* Humanist sans-serif for Bangla */
+
+    /* Spacing System */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+
+    /* Layout */
+    --container-width: 1200px;
+    --header-height: 70px;
+    --border-radius: 8px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+}
+
+/* Light Theme (Keep if needed, though Dark is primary) */
+@media (prefers-color-scheme: light) {
+    /* Optional: Invert logic here if a full light mode is requested later. 
+       For now, keeping the dark aesthetic as the "Classy" default. 
+       We will overwrite only if explicitly needed, but the brand is "Black". 
+    */
+}

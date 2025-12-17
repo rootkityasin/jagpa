@@ -1,0 +1,512 @@
+@import 'variables.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-white);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--brand-dark);
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donate-btn {
+    background-color: var(--brand-primary);
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    margin-left: 20px;
+}
+
+/* Navigation */
+.site-header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo a {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--brand-secondary);
+    text-transform: uppercase;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 0.8rem;
+    color: var(--brand-primary);
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--brand-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: var(--brand-primary);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 80px 0 0;
+    background: linear-gradient(to right, #ffffff 50%, #f4f4f4 50%);
+    overflow: hidden;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    padding-bottom: 80px;
+}
+
+.hero-subtitle {
+    display: block;
+    color: var(--brand-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--brand-secondary);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: var(--brand-primary);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    max-width: 500px;
+    border-left: 4px solid var(--brand-primary);
+    padding-left: 15px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary);
+    color: white;
+    padding: 15px 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--brand-primary);
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--brand-primary);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -20px 20px 0 var(--brand-primary);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    border-radius: 10px;
+    box-shadow: 20px 20px 0 var(--brand-secondary);
+}
+
+/* Vision/Banner Section */
+.vision-banner {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('../images/rally-crowd.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.vision-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+    }
+}
+
+.donate-btn {
+    animation: pulse 2s infinite;
+}
+
+/* Icon Interactions */
+.top-bar a i,
+footer a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.top-bar a:hover i,
+footer a:hover i {
+    transform: scale(1.2);
+    color: var(--brand-primary);
+}
+
+.pillar-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: var(--border-radius);
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-card i {
+    transition: transform 0.5s ease;
+}
+
+.pillar-card:hover i {
+    transform: rotateY(360deg);
+}
+
+/* Animation Utilities */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-100 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-200 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-300 {
+    transition-delay: 0.3s;
+}
+
+.reveal-delay-400 {
+    transition-delay: 0.4s;
+}
+
+.reveal-delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float-anim {
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-image img {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Typing Cursor */
+.typing-text::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Typing Effect for Subtitle */
+.hero-subtitle {
+    border-right: 2px solid var(--brand-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    max-width: fit-content;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--brand-primary)
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero .container,
+    .about-grid,
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero {
+        background: white;
+        text-align: center;
+    }
+
+    .hero-image img {
+        box-shadow: none;
+        animation: none;
+        /* Disable float on mobile for performance */
+    }
+
+    .nav-links {
+        display: none;
+        /* Todo: Add hamburger */
+    }
+}
+
+/* Brush Button Style - Realistic Image Asset */
+.brush-btn {
+    background: none;
+    border: none;
+    /* Taller padding */
+    padding: 25px 60px;
+    color: white;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Ensure text is above the paint */
+    isolation: isolate;
+    margin-top: 25px;
+    /* More space above */
+    min-width: 200px;
+}
+
+/* The Paint Blob Image */
+.brush-btn::before {
+    content: "";
+    position: absolute;
+    /* Massive vertical stretch (-30px each side) to make it tall/thick */
+    top: -30px;
+    bottom: -30px;
+    left: -15px;
+    right: -15px;
+    background-image: url('../images/brush-stroke.png');
+    background-repeat: no-repeat;
+    /* Ensure it covers the new tall area */
+    background-size: 100% 100%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    filter: brightness(1.1) contrast(1.1);
+}
+
+/* Pop the red */
+
+
+.brush-btn:hover {
+    transform: scale(1.02);
+}
+
+.brush-btn.small {
+    padding: 10px 30px;
+    font-size: 0.95rem;
+    min-width: 150px;
+}
+
+/* New Form Styles */
+.campaign-form label,
+.newsletter-form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--brand-secondary);
+}
+
+.campaign-form input,
+.campaign-form textarea,
+.newsletter-form input {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: var(--font-body);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.campaign-form input:focus,
+.campaign-form textarea:focus {
+    background: white;
+    border-color: var(--brand-primary);
+    outline: none;
+}
+
+/* Mobile Adjustments for Contact */
+@media (max-width: 768px) {
+    .contact-header h2 {
+        font-size: 3.5rem !important;
+    }
+
+    .contact-info-col {
+        padding-left: 0 !important;
+        margin-top: 40px;
+    }
+}

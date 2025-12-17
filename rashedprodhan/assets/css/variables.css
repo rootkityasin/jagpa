@@ -1,0 +1,25 @@
+:root {
+    /* Politono Theme Colors */
+    --brand-primary: #e74c3c;
+    /* Campaign Red */
+    --brand-secondary: #2c3e50;
+    /* Navy/Dark Blue */
+    --brand-dark: #1a1a1a;
+    --text-primary: #333333;
+    --text-light: #7f8c8d;
+
+    --bg-white: #ffffff;
+    --bg-light: #f9f9f9;
+
+    --container-width: 1200px;
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    --border-radius: 4px;
+}
