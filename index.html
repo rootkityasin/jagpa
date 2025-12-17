@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAGPA Suite | Official Portal</title>
+    <meta name="description"
+        content="Official portal for the Jatiya Ganotantrik Party (JAGPA) and Rashed Prodhan's campaign.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --brand-primary: #e74c3c;
+            /* Red */
+            --brand-dark: #2c3e50;
+            /* Dark Blue */
+            --bg-light: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-light);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--brand-dark);
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            height: 200px;
+            background-color: var(--brand-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .card-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .card-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--brand-dark);
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: var(--brand-primary);
+            color: white;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .project-card:hover .btn {
+            background: #c0392b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JAGPA SUITE</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Rashed Prodhan Card -->
+            <a href="rashedprodhan/index.html" class="project-card">
+                <div class="card-image" style="background: linear-gradient(135deg, #2c3e50, #4ca1af);">
+                    <i class="fas fa-user-tie fa-4x"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Rashed Prodhan</h2>
+                    <p>The personal campaign website for Rashed Prodhan. Discover his vision for a new Bangladesh, key
+                        values, and join the movement.</p>
+                    <span class="btn">Visit Website &rarr;</span>
+                </div>
+            </a>
+
+            <!-- JAGPA Party Card -->
+            <a href="jagpa-party/index.html" class="project-card">
+                <div class="card-image" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                    <i class="fas fa-users fa-4x"></i>
+                </div>
+                <div class="card-content">
+                    <h2>JAGPA Party</h2>
+                    <p>The official party portal. Read the 31-point manifesto, learn about our history, and explore the
+                        party's ideology.</p>
+                    <span class="btn">Visit Portal &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; color: #888; font-size: 0.9rem;">
+        <p>&copy; 2025 Jatiya Ganotantrik Party. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
